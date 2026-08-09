@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Voices in Perfect Octaves",
   description:
     "Octaaf Chorale Ensemble is a professional choral music ensemble based in Lagos, Nigeria, bringing rich, expertly rehearsed harmony to weddings, concerts, corporate events, church services and cultural celebrations.",
-  url: "https://octaafchorale.com",
+  url: "https://octaaf-chorale-site.vercel.app",
   location: "Lagos, Nigeria",
   whatsappNumber: "2348125953475",
   email: "hello@octaafchorale.com",
