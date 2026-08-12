@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ValueIcon from "@/components/ValueIcon";
-import { buildWhatsAppLink, musicDirector } from "@/lib/site-config";
+import { buildWhatsAppLink } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -95,39 +95,6 @@ export default function AboutPage() {
             <p className="mt-4 leading-relaxed text-paper/70">
               Our name reflects what we aim for in every performance: voices
               in perfect octaves, singing as one.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="text-center">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">
-            Our Leadership
-          </p>
-          <h2 className="font-display mt-4 text-3xl text-paper sm:text-4xl">
-            Music Director
-          </h2>
-        </div>
-        <div className="mt-14 grid items-center gap-12 lg:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-ink-line lg:order-2">
-            <Image
-              src={musicDirector.photo}
-              alt={`${musicDirector.name}, ${musicDirector.role} of Octaaf Chorale Ensemble`}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="lg:order-1">
-            <h3 className="font-display text-2xl text-paper">
-              {musicDirector.name}
-            </h3>
-            <p className="mt-1 text-xs uppercase tracking-[0.3em] text-gold">
-              {musicDirector.role}
-            </p>
-            <p className="mt-6 leading-relaxed text-paper/70">
-              {musicDirector.bio}
             </p>
           </div>
         </div>
