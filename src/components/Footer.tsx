@@ -69,6 +69,16 @@ export default function Footer() {
                   WhatsApp: +{siteConfig.whatsappNumber}
                 </a>
               </li>
+              <li>
+                <a
+                  href={siteConfig.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-gold"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { buildWhatsAppLink } from "@/lib/site-config";
+import ValueIcon from "@/components/ValueIcon";
+import { buildWhatsAppLink, musicDirector } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -12,25 +13,29 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Musical Excellence",
+    icon: "excellence",
     description:
       "Every performance is built on disciplined rehearsal, strong technique and genuine musicianship.",
   },
   {
     title: "Versatility",
+    icon: "versatility",
     description:
       "From classical choral works to gospel, contemporary and African arrangements, we adapt our sound to your event.",
   },
   {
     title: "Professionalism",
+    icon: "professionalism",
     description:
       "Punctual, well-rehearsed and easy to work with — we treat every engagement, large or small, with the same care.",
   },
   {
     title: "Community",
+    icon: "community",
     description:
       "We are a collective of dedicated vocalists who share a love for choral music and for lifting the rooms we sing in.",
   },
-];
+] as const;
 
 const repertoire = [
   "Classical & Sacred Choral Works",
@@ -59,8 +64,8 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-ink-line">
             <Image
-              src="/gallery/photo-05.jpg"
-              alt="Octaaf Chorale Ensemble members in performance robes"
+              src="/gallery/photo-20.jpg"
+              alt="Octaaf Chorale Ensemble singing together in performance"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -95,6 +100,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+        <div className="text-center">
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">
+            Our Leadership
+          </p>
+          <h2 className="font-display mt-4 text-3xl text-paper sm:text-4xl">
+            Music Director
+          </h2>
+        </div>
+        <div className="mt-14 grid items-center gap-12 lg:grid-cols-2">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-ink-line lg:order-2">
+            <Image
+              src={musicDirector.photo}
+              alt={`${musicDirector.name}, ${musicDirector.role} of Octaaf Chorale Ensemble`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="lg:order-1">
+            <h3 className="font-display text-2xl text-paper">
+              {musicDirector.name}
+            </h3>
+            <p className="mt-1 text-xs uppercase tracking-[0.3em] text-gold">
+              {musicDirector.role}
+            </p>
+            <p className="mt-6 leading-relaxed text-paper/70">
+              {musicDirector.bio}
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-ink-soft py-20">
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="text-center">
@@ -111,7 +149,10 @@ export default function AboutPage() {
                 key={value.title}
                 className="rounded-xl border border-ink-line bg-ink p-6"
               >
-                <h3 className="font-display text-lg text-gold">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/40 bg-ink-soft text-gold">
+                  <ValueIcon icon={value.icon} />
+                </span>
+                <h3 className="font-display mt-5 text-lg text-gold">
                   {value.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-paper/65">

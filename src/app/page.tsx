@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import OccasionIcon from "@/components/OccasionIcon";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import {
   buildWhatsAppLink,
@@ -98,7 +99,10 @@ export default function Home() {
                 key={event.title}
                 className="rounded-xl border border-ink-line bg-ink p-7 transition-colors hover:border-gold/50"
               >
-                <h3 className="font-display text-xl text-gold">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/40 bg-ink-soft text-gold">
+                  <OccasionIcon icon={event.icon} />
+                </span>
+                <h3 className="font-display mt-5 text-xl text-gold">
                   {event.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-paper/65">
