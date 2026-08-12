@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsappNumber: "2348125953475",
   email: "hello@octaafchorale.com",
   instagram: "https://www.instagram.com/oct_aaf/",
-  youtube: "https://youtube.com/@octaafchorale",
+  youtube: "https://youtube.com/@octaafoctaaf8683",
 } as const;
 
 export const navLinks = [
@@ -32,15 +32,78 @@ export const defaultWhatsAppMessage =
 export const videos = [
   {
     id: "iOJpuDUXZ7g",
-    title: "Octaaf Chorale Ensemble — Performance",
+    title: "S'ohun Rere Laye Mi Jesu",
+    credit: "Dotun Olayemi",
+  },
+  {
+    id: "QrjaaQuo3eI",
+    title: "High and Lifted Up",
+    credit: "Joseph Pace II / Carol Cymbala",
+  },
+  {
+    id: "PDDCqXmbBOI",
+    title: "Great Is Thy Faithfulness",
+    credit: "Mary McDonald",
+  },
+  {
+    id: "b-B6t0wf1e0",
+    title: "The Lord Is My Shepherd",
+    credit: "Howard Goodall",
   },
   {
     id: "sSMYj2COKKo",
-    title: "Octaaf Chorale Ensemble — Performance",
+    title: "Because He Lives (Hymn) — Organ Improvisation",
+    credit: "Performed and improvised by Tope Olagunju",
+  },
+  {
+    id: "ymQ_9fUkXxI",
+    title: "In the Garden",
+    credit: "Mark Hayes",
+  },
+  {
+    id: "ZqZXQfN5nrk",
+    title: "They Didn't Know",
+    credit: "Kurt Carr",
+  },
+  {
+    id: "WswhZ9SBPSc",
+    title: "Psalm 101 (Anglican Chant)",
+    credit: "William Crotch",
+  },
+  {
+    id: "ZclwIK_3aoY",
+    title: "2026 Easter Concert (Virtual) — He Lives! A Journey of Hope",
+    credit: "Octaaf Chorale Ensemble, conducted by Tope Olagunju",
+  },
+  {
+    id: "2TGjyGY0AvA",
+    title: "Thankful",
+    credit: "Mark Hayes",
+  },
+  {
+    id: "LOGpB3gTW2Y",
+    title: "Examine Me",
+    credit: "Cedric Dent — conducted by Tope Olagunju",
+  },
+  {
+    id: "hwNtkVtJEiU",
+    title: "Infant Holy / El Shaddai",
+    credit: "J. Rouse",
+  },
+  {
+    id: "u1hPMxNFpjI",
+    title: "Baba Yetu",
+    credit: "Christopher Tin — Temitope Aina (piano), Tope Olagunju (organ)",
   },
   {
     id: "yTBKbuVgiuU",
-    title: "Octaaf Chorale Ensemble — Performance",
+    title: "Love Medley",
+    credit: "Arranged and performed by Tope Olagunju",
+  },
+  {
+    id: "3KN_QrWWjYE",
+    title: "When You Believe (from The Prince of Egypt)",
+    credit: "Arranged by Audrey Snyder",
   },
 ] as const;
 

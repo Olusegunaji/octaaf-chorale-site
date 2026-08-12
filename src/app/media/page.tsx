@@ -31,9 +31,10 @@ export default function MediaPage() {
           {videos.map((video) => (
             <div key={video.id}>
               <YouTubeEmbed videoId={video.id} title={video.title} />
-              <p className="mt-3 text-sm uppercase tracking-wider text-paper/60">
+              <h3 className="font-display mt-4 text-lg text-paper">
                 {video.title}
-              </p>
+              </h3>
+              <p className="mt-1 text-sm text-paper/60">{video.credit}</p>
             </div>
           ))}
         </div>

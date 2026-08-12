@@ -126,6 +126,12 @@ export default function Home() {
         </div>
         <div className="mt-12">
           <YouTubeEmbed videoId={videos[0].id} title={videos[0].title} />
+          <h3 className="font-display mt-4 text-center text-lg text-paper">
+            {videos[0].title}
+          </h3>
+          <p className="mt-1 text-center text-sm text-paper/60">
+            {videos[0].credit}
+          </p>
         </div>
         <div className="mt-8 text-center">
           <Link
