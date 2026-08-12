@@ -88,7 +88,17 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
             reserved.
           </p>
-          <p>Lagos, Nigeria</p>
+          <p>
+            Designed by{" "}
+            <a
+              href="https://www.apexgriddigital.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-gold"
+            >
+              ApexGrid Digital
+            </a>
+          </p>
         </div>
       </div>
     </footer>
